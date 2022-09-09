@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  height: 600px;
+  padding: 5%;
+}
+#light{
+}
+#light button{
+  background-color: black;
+  color: white;
+}
+#dark{
+  background-color: black;
+  color: white;
+}
+#dark button{
+}
+button{
+  border-radius: 5px;
+    padding: 7px;
+    font-size: 15px;
+    border: 0;
+}
