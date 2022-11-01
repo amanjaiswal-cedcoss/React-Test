@@ -1,68 +1,124 @@
-body{
-  background-color: whitesmoke;
+*{
+  margin: 0;
 }
-#head{
+body {
+  background-color: #e5e5e5;
+}
+#divTimer {
+  margin: 2% auto;
+  font-size: 35px;
+  width: 130px;
+  text-align: center;
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+}
+#head {
   background-color: white;
-  width: 80%;
-  margin: auto;
+  width: 78%;
+  margin: 0 auto 2%;
+  padding: 1%;
 }
-#body{
+#body {
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-#question{
+#question {
   background-color: white;
-  width: 60%;
+    width: 53%;
+    padding: 1%;
 }
-#questionNum{
-
+#hrQuestion{
+  margin: 2% 0;
 }
-#options{
-
+#questionNum {
 }
-#options>div{
-  margin:4% 0;
+#options {
 }
-#btns{
+#options > div {
+  margin: 4% 0;
+}
+#btns {
   margin: 1%;
 }
-#question button{
+#btns button {
+  cursor: grab;
+}
+#question button {
   border: 0;
   height: 40px;
   margin: 4px;
 }
-#saveNext{
+#saveNext {
   background-color: green;
   color: white;
 }
-#clearResponse{
+#clearResponse {
   background-color: #cbc3c3;
 }
-#markReview{
+#markReview {
   background-color: #b5c100;
   color: white;
 }
-#saveMarkReview{
+#saveMarkReview {
   background-color: rgb(23, 102, 206);
   color: white;
 }
-#submitClose{
+#submitClose {
   background-color: grey;
   color: white;
 }
-#stats{
+#stats {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 35%;
+  width: 40%;
 }
-#groups{
+#groups {
   background-color: white;
   width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  font-size: 14px;
+  margin: 0 0 40px 0;
 }
-#count{
+#groups>div{
+  display: flex;
+  align-items: center;
+}
+.groupDivs {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 10px;
+}
+.groupDivsText{
+  width: 70%;
+}
+.green{
+  background-color: green;
+}
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: #b5c100;
+}
+.blue{
+  background-color: rgb(23, 102, 206);
+}
+.grey{
+  background-color: grey;
+}
+#markedAnsweredDiv{
+  width: 315px;
+}
+#count {
   background-color: white;
   display: flex;
   width: 100%;
@@ -70,7 +126,7 @@ body{
   display: flex;
   align-items: center;
 }
-#count>div{
+#count > div {
   height: 65%;
   width: 12%;
   margin: 0 3%;
@@ -79,6 +135,9 @@ body{
   align-items: center;
   justify-content: center;
 }
-#green{
+#green {
   background-color: green !important;
+}
+.countDivs {
+  cursor: grab;
 }
